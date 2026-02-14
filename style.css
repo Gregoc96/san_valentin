@@ -20,8 +20,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: #3e2723;
+    padding: 40px 0;
 }
 
 #flower-container {
