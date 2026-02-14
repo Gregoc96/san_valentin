@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín Alexandra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="flower-container"></div>
+
+    <main class="container">
+        <div class="card" id="main-card">
+            <!-- Step 0: Cover -->
+            <div class="step active" id="step-0">
+                <div class="flower-icon">🌻</div>
+                <h1>Para Alexandra</h1>
+                <p>Alexandra, hay historias que comienzan con una sonrisa y se convierten en todo un mundo. He guardado
+                    un trocito de la nuestra aquí...</p>
+                <button onclick="nextStep(1)">Descubrir</button>
+            </div>
+
+            <!-- Step 1: Monitos -->
+            <div class="step" id="step-1">
+                <h1>Nuestra Magia</h1>
+                <div class="romantic-image-container">
+                    <img src="2san.png" alt="Nosotros Monitos" class="story-img">
+                </div>
+                <p class="message">
+                    Incluso en nuestros momentos más locos, cuando somos simplemente nosotros siendo niños, hay una
+                    complicidad que nos hace únicos. ¡Contigo la vida siempre es una aventura divertida! 🐒❤️
+                </p>
+                <button onclick="nextStep(2)">Continuar el viaje</button>
+            </div>
+
+            <!-- Step 2: Real Photo -->
+            <div class="step" id="step-2">
+                <h1>Mi Realidad Favorita</h1>
+                <div class="romantic-image-container">
+                    <img src="1san.png" alt="Nosotros en persona" class="story-img">
+                </div>
+                <p class="message">
+                    Pero al final del día, mi lugar favorito en el mundo es aquí, a tu lado. La realidad contigo es
+                    infinitamente más bella de lo que jamás pude soñar. 😍✨
+                </p>
+                <button onclick="nextStep(3)">Un deseo final...</button>
+            </div>
+
+            <!-- Step 3: Final Message -->
+            <div class="step" id="step-3">
+                <h1>¡Feliz San Valentín!</h1>
+                <div class="flower-icon">💝</div>
+                <p class="message highlight">
+                    Alexandra, que la luz de los girasoles nos siga guiando siempre. Eres mi persona favorita hoy,
+                    mañana y cada San Valentín de mi vida. <br><br>
+                    ¡Te amo, mi monakita! ❤️🌻
+                </p>
+                <button onclick="nextStep(0)">Volver a empezar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
